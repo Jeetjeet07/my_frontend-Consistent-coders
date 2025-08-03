@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #a8bbf5;
+  color: #222;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.option-btn {
+  cursor: pointer;
+  padding: 20px 25px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  user-select: none;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+  border: 3px solid transparent;
+}
+
+.option-btn span.symbol {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.dsa {
+  background-color: #d9c2f0;
+  color: #8a4d9d;
+}
+
+.webdev {
+  background-color: #cce4ff;
+  color: #2a75d9;
+}
+
+.revision {
+  background-color: #d5f7cc;
+  color: #2f5700;
+}
+
+.ai {
+  background-color: #ffdcb3;
+  color: #a53c00;
+}
+
+.option-btn.selected {
+  border-color: #000;
+  box-shadow: 0 0 10px #333;
+}
+
+button#submit-btn {
+  background-color: #0a0616;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: background-color 0.3s ease;
+}
+
+button#submit-btn:hover {
+  background-color: #333;
+}
+
+#month-year {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #29335f;
+  margin: 20px 0 10px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  justify-items: center;
+  background: #c6d1ee;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.day {
+  background: white;
+  border-radius: 10px;
+  width: 60px;
+  height: 80px;
+  position: relative;
+  user-select: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-num {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.option-mark {
+  font-size: 1.8rem;
+  margin-top: 8px;
+  user-select: none;
+}
+
+
+/* calender col */
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 days in a week */
+  gap: 6px;
+  padding: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #c3cef4;
+}
+
+
+
+
+
+
+/* Position control buttons below the calendar */
+.calendar-controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Button styling */
+#prev-month,
+#next-month,
+#clear-all {
+  background-color: #4a4e69;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#prev-month:hover,
+#next-month:hover,
+#clear-all:hover {
+  background-color: #22223b;
+}
+
+/* Make 'Clear All' red */
+#clear-all {
+  background-color: #c1121f;
+}
+
+#clear-all:hover {
+  background-color: #780000;
+}
