@@ -112,3 +112,19 @@ clearAllBtn.addEventListener('click', () => {
 
 // 🔁 Initial render
 buildCalendar(currentYear, currentMonth);
+
+// Only Saved on req. browser
+const userFlagKey = 'consistentCoderUser';
+
+// localStorage.setItem(userFlagKey, 'true');
+window.onload = function() {
+  const isUser = localStorage.getItem(userFlagKey);
+  if (isUser === 'true') {
+    // Load saved data for you
+    loadSavedCalendar();
+  } else {
+    // Fresh blank calendar for others
+    createBlankCalendar();
+  }
+};
+
