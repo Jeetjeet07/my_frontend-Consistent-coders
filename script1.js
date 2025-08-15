@@ -172,3 +172,21 @@ clearDateBtn.addEventListener('click', () => {
 // Initial calendar
 buildCalendar(currentYear, currentMonth);
 
+<<<<<<< HEAD
+=======
+// Only Saved on req. browser
+const userFlagKey = 'consistentCoderUser';
+
+// localStorage.setItem(userFlagKey, 'true');
+window.onload = function() {
+  const isUser = localStorage.getItem(userFlagKey);
+  if (isUser === 'true') {
+    // Load saved data for you
+    loadSavedCalendar();
+  } else {
+    // Fresh blank calendar for others
+    createBlankCalendar();
+  }
+};
+
+>>>>>>> 3f13dce3cf67be116b08dd7f067b0057d438afd4
