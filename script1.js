@@ -172,8 +172,7 @@ clearDateBtn.addEventListener('click', () => {
 // Initial calendar
 buildCalendar(currentYear, currentMonth);
 
-<<<<<<< HEAD
-=======
+
 // Only Saved on req. browser
 const userFlagKey = 'consistentCoderUser';
 
@@ -189,4 +188,4 @@ window.onload = function() {
   }
 };
 
->>>>>>> 3f13dce3cf67be116b08dd7f067b0057d438afd4
+
